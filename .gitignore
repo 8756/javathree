@@ -1,12 +1,56 @@
-*.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+/*
+ *        
+  *         -*.class
+  *       -*.class
+  *      -*.class
+  *      -# Mobile Tools for Java (J2ME)
+  *      -.mtj.tmp/
+ *
+  *      -# Package Files #
+  *        -*.jar
+ *          -*.war
+  *    -*.ear
+*/
+//written by Joseph Corella
+//november 13, 2015
 
-# Package Files #
-*.jar
-*.war
-*.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+import javax.swing.JOptionPane; 
+
+import java.text.*;
+
+
+public class Age 
+{
+public static void main(String[] args)	
+	{
+		
+		
+			String ageString;
+		int age, ageleft, ageafter;
+		
+		
+		ageString = JOptionPane.showInputDialog(null, "Enter your age", "Number", JOptionPane.QUESTION_MESSAGE);
+		
+		age = Integer.parseInt(ageString);
+		
+		ageleft = 100 - age;
+		ageafter = age - 100;
+		
+		
+		
+		if (age >= 100)  
+		JOptionPane.showMessageDialog(null,  "congrats! you were exactly 100 years old " + ageafter + " years ago!!");
+		else
+		JOptionPane.showMessageDialog(null,  "only " + ageleft + " years until your a century old!!");
+		
+	
+	}
+}
+
+
+
+
+
+
